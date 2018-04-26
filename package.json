@@ -9,19 +9,11 @@
     "url": "http://github.com/insin/react-hn.git"
   },
   "scripts": {
-    "build": "mkdir -p dist && nwb build && npm run copy-manifest && npm run clean && npm run generate-sw",
-    "deploy": "gcloud preview app deploy",
-    "lint-old": "./node_modules/eslint-config-jonnybuchanan/bin/lint.js src",
-    "lint:fix": "./node_modules/eslint-config-jonnybuchanan/bin/lint.js --fix .",
-    "start": "node server.js",
-    "postinstall": "npm run build",
-    "serve": "nwb serve",
-    "copy-manifest": "cp public/manifest.json dist/manifest.json",
-    "generate-sw": "node generate-sw.js",
-    "clean": "rm -rf *.json.gzip dist/index.html"
-  },
-  "engines": {
-    "node": "6.1.0"
+    "webpack:serve": "nwb serve-react-app --babel.stage=2",
+    "webpack:build": "nwb build-react-app --babel.stage=2",
+    "parcel:serve": "parcel ./src/App.js",
+    "parcel:build": "parcel build ./src/App.js",
+    "clean": "rm -rf .cache dist # Run this if you want a clean build without cache"
   },
   "main": "server.js",
   "dependencies": {
@@ -30,7 +22,6 @@
     "babel-preset-stage-0": "^6.16.0",
     "babel-register": "^6.16.0",
     "ejs": "^2.4.1",
-    "eslint-config-jonnybuchanan": "4.6.0",
     "events": "1.1.1",
     "express": "^4.13.4",
     "firebase": "3.4.1",
@@ -49,8 +40,6 @@
     "url-parse": "^1.1.1"
   },
   "devDependencies": {
-    "html-webpack-plugin": "2.22.0",
-    "webpack": "1.13.2",
-    "workbox-build": "0.0.2"
+    "parcel-bundler": "^1.7.1"
   }
 }
