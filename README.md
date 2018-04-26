@@ -4,9 +4,9 @@ Tested on a dual-core mid-2014 Macbook Pro 13"
 
 | Type | Parcel (Using 2 workers) | Webpack |
 | ---  | ---    | ---     |
-| Build | *7.76s* | 10.20s |
-| Build (cached) | *629ms* | N/A |
-| Serve | *3.17s* | 4.01s |
+| Build | *7.56s* - 194.62KB | 13.99s - *125.63KB* |
+| Build (cached) | *628ms* | N/A |
+| Serve | *3.17s* | 3731ms |
 | Serve (cached) | *833ms* | N/A |
 
 ## These are false results!

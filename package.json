@@ -27,7 +27,6 @@
     "firebase": "3.4.1",
     "history": "^2.1.2",
     "isomorphic-fetch": "^2.2.1",
-    "nwb": "0.12.2",
     "object-assign": "^4.1.0",
     "react": "15.3.2",
     "react-dom": "15.3.2",
@@ -40,6 +39,7 @@
     "url-parse": "^1.1.1"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.7.1"
+    "parcel-bundler": "^1.7.1",
+    "nwb": "0.21.5"
   }
 }
