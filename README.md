@@ -6,7 +6,7 @@ Tested on a dual-core mid-2014 Macbook Pro 13"
 | ---  | ---    | ---     |
 | Build | **7.56s** | 13.99s |
 | Build (cached) | **628ms** | N/A |
-| Serve | **3.17s** | 3731ms |
+| Serve | **3.17s** | 3.73s |
 | Serve (cached) | **833ms** | N/A |
 | Build package size | 194.62KB | **125.63KB** |
 
