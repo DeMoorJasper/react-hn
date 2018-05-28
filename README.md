@@ -8,13 +8,14 @@ Tested on a dual-core mid-2014 Macbook Pro 13"
 
 | Type | Parcel (Using 2 workers) | Webpack |
 | ---  | ---    | ---     |
-| Build | **7.56s** | 13.99s |
-| Build (cached) | **628ms** | N/A |
-| Serve | **3.17s** | 3.73s |
-| Serve (cached) | **833ms** | N/A |
+| Build | **6.55s** | 11.15s |
+| Build (cached) | **523ms** | 4.82s |
+| Serve | 5.29s | **3.64s** |
+| Serve (cached) | **1.1s** | 2.16s |
+| Incremental builds (after a tiny change) | **239ms** | 552ms |
 | Build package size | 194.62KB | **125.63KB** |
 
-## These are false results!
+## These are false results?!
 
 These tests could probably be optimised for both parcel and webpack
 
